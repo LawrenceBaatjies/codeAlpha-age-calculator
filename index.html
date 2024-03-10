@@ -9,52 +9,38 @@
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="/style/normalize.css">
 </head>
-
- <body>
-    <h1 class="text">Age Calculator</h1>
-    <div class="main-body">
-        <div class="conatiner">
-            <div class="get-info">
-
-                <!-- get day -->
-                <div class="day">
-                    <span title="day">Day</span>
-                    <input type="text" placeholder="DD" 
-                    />
-                     <!-- get month -->
-                    <div class="month">
-                        <span title="month">Month</span>
-                        <input type="text" placeholder="MM" 
-                        />
-                         <!-- get year -->
-                         <div class="year">
-                            <span title="year">Year</span>
-                            <input title="year" placeholder="YY" />
-                         </div>
-                    </div>
-                    <!-- end get-info part -->
-                    <div class="middle-line">
-                        <span class="calc"> 
-                            <image src="/images/icon-arrow.svg" alt="arrow icon" 
-                            />
-                        </span>
-                        <div class="result">
-                            <h3><span>--</span> Years</h3>
-                            <h3><span>--</span> Month</h3>
-                            <h3><span>--</span> Day</h3>
-                        </div>
-                        <!-- result part -->
-                    </div>
-                </div>
-            </div>
+<body>
+    <h1 class="header">Age calculator</h1>
+<div class="main-body">
+    <div class="container">
+      <div class="get-info">
+        <div class="day"> <!-- get day -->
+          <span title="day">day</span>
+          <input type="text" placeholder="DD">
         </div>
-    </div>
-
-
-    <footer class="footer">
-        <p class="footer-p">Created by <a href=""><em>LB</em></a></p>
-      </footer>
-
+        <div class="month"> <!-- get month -->
+          <span title="month">month</span>
+          <input type="text" placeholder="MM">
+        </div>
+        <div class="year"> <!-- get year -->
+          <span title="year">year</span>
+          <input type="text" placeholder="YYYY">
+        </div>
+      </div> <!-- end get-info part -->
+      <div class="middle-line"><span class="calc"><img src="/images/icon-arrow.svg" alt="arrow-icon"></span></div>
+      <div class="result">
+        <h3><span>--</span> years</h3>
+        <h3><span>--</span> months</h3>
+        <h3><span>--</span> days</h3>
+      </div> <!-- result part -->
+    </div> 
+  </div>
+  <footer>
+    <p>Created by <a href="">LB</a></p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
 
     <script src="script.js"></script>
  </body>
