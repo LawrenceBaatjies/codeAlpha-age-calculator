@@ -30,10 +30,19 @@ body {
   /* background-image: url("/images/"); */
 }
 .header {
-    padding-top: 10px;
-    padding-bottom: 40px;
+    margin-bottom: 4rem;
     text-align: center;
     font-size: 40px;
+    border-radius: 15px;
+    box-shadow: grey 2px 3px 5px 2px;
+
+    background-image:
+
+     linear-gradient(
+      rgb(0, 255, 149),
+       rgb(0, 204, 255)
+       );
+
 }
 
 /* main body */
@@ -43,6 +52,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  
 }
 .main-body .container {
   width: 48%;
@@ -58,6 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: grey 2px 3px 5px 2px;
 }
 /* Small devices (tablets): less than 768px */
 @media only screen and (max-width: 768px) {
@@ -155,6 +166,7 @@ body {
 }
 .result h3 span {
   color: var(--green-color);
+  
 }
 /* large devices */
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 
