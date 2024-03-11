@@ -62,8 +62,23 @@ const calculateAge = () => {
             return;
         }
 
-        
+        // validate year
 
+        let currentYear = new Date().getFullYear();
+            if( year < 1900 || year > currentYear) {
+                alert(`Please enter a valid year between 1900 and  ${currentYear} + '.'`);
+                return;
+            }
+            
+            // calculate age
+
+    let today = new Date();
+    let birthday = new Date(year, month, day);
+    let ageYear = today.getFullYear() - birthDate.getFullYear();
+    let ageMonth = today.getMonth() - birthDate.getMonth();
+    let ageDays = today.getDate() - birthDate.getDate();
+
+    // handle negative age
     
 
 
