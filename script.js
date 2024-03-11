@@ -14,9 +14,56 @@ calcButton.addEventListener('click', (event) => {
     calculateAge();
 })
 
-// add event listener to the input fields
-dayInput.addEventListener('click', () => {
-    if(event.keyCode === 13) {
-        
+// add event listener to the input fields Day- Month- Year
+dayInput.addEventListener('click', (event) => {
+    if(event.keyCode === 13) {  // check if the "Enter" key is pressed
+        event.preventDefault();  // prevent the default behavior of the input field
+        calculateAge();
     }
 })
+
+monthInput.addEventListener('click', (event) => {
+    if(event.keyCode === 13) {
+        event.preventDefault();
+        calculateAge();
+    }
+})
+
+yearInput.addEventListener('click', (event) => {
+    if(event.keyCode === 13) {
+        event.preventDefault();
+        calculateAge();
+    }
+})
+
+// function to calculate age
+
+const calculateAge = () => {
+    let day = parseInt(dayInput.value);
+    let month = parseInt(monthInput.value) -1;   // subtract 1 from month
+    let year = parseInt(yearInput.value);
+
+        if(isNaN(day) || isNaN(month) || isNaN(year)) {
+            alert('Please enter a valid date in the format of DD/MM/YYYY.');
+            return;
+        }
+}
+
+ // validate day and month
+
+ let maxDays = new Date(year, month =1, 0).getDate();
+    if(day < 1 || day > maxDays) {
+        alert('Please enter a valid day')
+        return;
+    }
+
+        if(month < 0 || month > 11) {
+            alert('Please enter a valid month');
+            return;
+        }
+
+        
+
+    
+
+
