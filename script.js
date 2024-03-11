@@ -6,37 +6,39 @@ const yearResult = document.querySelector('.result h3:nth-of-type(1) span');
 const monthResult = document.querySelector('.result h3:nth-of-type(2) span');
 const dayResult = document.querySelector('.result h3:nth-of-type(3) span');
 
+
+
 // add event listener to the calculate button
 let calcButton = document.querySelector('.middle-line .calc');
-calcButton.addEventListener('click', function(event) {
-  event.preventDefault(); // prevent the default behavior of the button
+calcButton.addEventListener('click', (event) => {
+  event.preventDefault();                 // prevent the default behavior of the button
   calculateAge();
 });
 
 // add event listener to the input fields
-dayInput.addEventListener('keyup', function(event) {
-  if (event.keyCode === 13) { // check if the "Enter" key is pressed
-    event.preventDefault(); // prevent the default behavior of the input field
+dayInput.addEventListener('keyup', (event) => {
+  if (event.keyCode === 13) {             // check if the "Enter" key is pressed
+    event.preventDefault();              // prevent the default behavior of the input field
     calculateAge();
   }
 });
 
-monthInput.addEventListener('keyup', function(event) {
-  if (event.keyCode === 13) { // check if the "Enter" key is pressed
-    event.preventDefault(); // prevent the default behavior of the input field
+monthInput.addEventListener('keyup', (event) =>{
+  if (event.keyCode === 13) {               // check if the "Enter" key is pressed
+    event.preventDefault();                // prevent the default behavior of the input field
     calculateAge();
   }
 });
 
-yearInput.addEventListener('keyup', function(event) {
-  if (event.keyCode === 13) { // check if the "Enter" key is pressed
-    event.preventDefault(); // prevent the default behavior of the input field
+yearInput.addEventListener('keyup', (event) => {
+  if (event.keyCode === 13) {            // check if the "Enter" key is pressed
+    event.preventDefault();               // prevent the default behavior of the input field
     calculateAge();
   }
 });
 
 // function to calculate age
-function calculateAge() {
+const calculateAge = () => {
   // validate input fields
   let day = parseInt(dayInput.value);
   let month = parseInt(monthInput.value) - 1; // subtract 1 from month
