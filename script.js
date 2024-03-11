@@ -89,4 +89,6 @@ const calculateAge = () => {
   yearResult.textContent = ageYears;
   monthResult.textContent = ageMonths;
   dayResult.textContent = ageDays;
+
+  
 }
