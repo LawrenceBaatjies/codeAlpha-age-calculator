@@ -274,3 +274,9 @@ footer-p a {
     /* opacity: .99; */
   }
 }
+
+.footer_text {
+  color: #f0f0f0;
+  position: relative;
+  text-align: center;
+}
