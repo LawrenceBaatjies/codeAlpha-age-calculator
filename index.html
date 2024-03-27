@@ -4,37 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeAlpha Age calculator </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/L_transparent.svg" type="image/x-icon">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="/style/normalize.css">
 </head>
 <body>
-    
-<div class="main-body">
-    <div class="container">
-      <h1 class="header">Age calculator</h1>
-      <div class="get-info">
-        <div class="day"> <!-- get day -->
-          <span title="day">day</span>
-          <input type="text" placeholder="DD">
-        </div>
-        <div class="month"> <!-- get month -->
-          <span title="month">month</span>
-          <input type="text" placeholder="MM">
-        </div>
-        <div class="year"> <!-- get year -->
-          <span title="year">year</span>
-          <input type="text" placeholder="YYYY">
-        </div>
-      </div> <!-- end get-info part -->
-      <div class="middle-line"><span class="calc"><img src="/images/icon-arrow.svg" alt="arrow-icon"></span></div>
-      <div class="result">
-        <h3><span>--</span> :Years</h3>
-        <h3><span>--</span> :Months</h3>
-        <h3><span>--</span> :Days</h3>
-      </div> <!-- result part -->
-    </div> 
-  </div>
+       
+    <div class="main-body">
+        <div class="container">
+          <h1 class="header">Age calculator</h1>
+          <div class="get-info">
+            <div class="day"> <!-- get day -->
+              <span title="day">day</span>
+              <input type="text" placeholder="DD">
+            </div>
+            <div class="month"> <!-- get month -->
+              <span title="month">month</span>
+              <input type="text" placeholder="MM">
+            </div>
+            <div class="year"> <!-- get year -->
+              <span title="year">year</span>
+              <input type="text" placeholder="YYYY">
+            </div>
+          </div> <!-- end get-info part -->
+        
+
+        
+          <div class="middle-line"><span class="calc">
+            <img src="/images/icon-arrow.svg" alt="arrow-icon"></span></div>
+          <div class="result">
+            <h3><span>--</span>:Years</h3>
+            <h3><span>--</span>:Months</h3>
+            <h3><span>--</span>:Days</h3>
+            
+          </div> <!-- result part -->
+        
+
+                <!-- calculate the star sign. -->
+                <div class="scope container-star">
+                  <h2>Find your Star Sign</h2>
+                  <form id="ageForm">
+                      <label for="birthdate">Enter your birthdate:</label>
+                      <input type="date" id="birthdate" required>
+                      <button class="btn" type="button" onclick="calculateStarSign()"><img src="/images/icon-arrow.svg" alt="arrow-icon"></button>
+                  </form>
+                  <div id="result"></div>
+              </div> 
+            </div>
+        
   <footer>
     <p class="footer_text">Created by <a href="https://github.com/LawrenceBaatjies?tab=overview&from=2022-12-01&to=2022-12-31">LB</a><hr />
     </p>
@@ -43,5 +62,4 @@
   
     <script src="script.js"></script>
  </body>
-
 </html>
