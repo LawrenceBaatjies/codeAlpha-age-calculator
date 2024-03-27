@@ -30,7 +30,7 @@ body {
   background-image: url("https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=");
 }
 .header {
-    margin-bottom: 4rem;
+    margin-top: -3rem;
     text-align: center;
     font-size: 40px;
     border-radius: 15px;
@@ -55,8 +55,8 @@ body {
   
 }
 .main-body .container {
-  width: 48%;
-  height: 80%;
+  width: 68%;
+  height: 85%;
   background-color: #fff;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -83,6 +83,7 @@ body {
 
 /* get info part */
 .get-info { 
+  padding-top: 50px;
   display: flex;
   height: 30%;
 }
@@ -95,7 +96,7 @@ body {
 }
 .get-info div span {
   color: var(--brown-color);
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -106,7 +107,7 @@ body {
   background: transparent;
   padding: 20px;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 20px;
   color: var(--black-color);
   border-radius: 6px;
   border-style: solid;
@@ -115,7 +116,7 @@ body {
 }
 /* Large devices (desktops): 992px to 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .get-info div span {
+  .get-info .scope div span {
     font-size: 17px;
   }
   .get-info div input {
@@ -160,7 +161,7 @@ body {
 }
 .result h3 {
   color: var(--black-color);
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
   font-style: italic;
 }
@@ -187,11 +188,14 @@ body {
     justify-content: space-evenly;
   }
   .result h3 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 15px;  
   }
 }
+.btn {
+ background-color: var(--black-color);
 
+}
 /* middle line */
 .middle-line {
   width: 100%;
@@ -279,4 +283,62 @@ footer-p a {
   color: #f0f0f0;
   position: relative;
   text-align: center;
+}
+
+/* Start sign */
+.scope .container-star{
+  
+  margin-top: 95px;
+  margin-left: 540px;
+  position: fixed;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 10px;
+  overflow: hidden; 
+  background-color:  var(--green-color);
+  border-radius: 25px 10px 50px ;
+  box-shadow: 3px 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="date"] {
+  padding: 5px;
+  margin: 0 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 5px 10px;
+  background-color:  var(--green-color);;
+  color: #fff;
+  border: none;
+  border-radius: 50px 50px 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:var(--green-color);
+  transition: 0.6s;
+}
+
+#result {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
 }
